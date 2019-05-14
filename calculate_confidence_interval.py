@@ -20,7 +20,7 @@ def freqconfint_gaussian(x, sigma=1, clevel=.68, step=.01):
 		x_min += step
 	return x_min, x_max
 
-data = np.genfromtxt(input('Tell me the name of the file with the data, please...\n--> '), delimiter=',', skip_header = 0) # Read the data.
+data = np.genfromtxt('data.csv', delimiter=',', skip_header = 0) # Read the data.
 data = data.transpose() # Accomodate the data.
 q_i = data[0] # Get data.
 sigma_i = data[1] # Get data.
